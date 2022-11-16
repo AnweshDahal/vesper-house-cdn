@@ -1,0 +1,380 @@
+#main-header { 
+	display: none; 
+}
+
+#page-container {
+	padding-top: 0px !important;
+	margin-top: -1px !important;
+}
+
+.woof_reset_search_form{
+	border: none !important;
+	font-size: 1rem !important;
+}
+
+.woof_show_auto_form, .woof_btn_default{
+	display: none !important;
+}
+
+.woocommerce ul.products li.product .button::before{
+	display: none !important;
+}
+
+.woocommerce ul.products li.product .added_to_cart, .woocommerce ul.products li.product .added_to_cart .wc-forward{
+	display: none;
+}
+
+.woocommerce ul.products li.product .button{
+	width: 100%;
+	margin-top: 10px !important;
+	text-align: center;
+	background: #ffaf00;
+	border: none;
+	color: #fff;
+	font-size: 1rem !important;
+	font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Change the width of the dropdown container */
+.dl-menu ul.sub-menu {
+    width: 300px;
+}
+
+/* Change the width of the links inside the dropdown */
+.dl-menu ul.sub-menu li,
+.dl-menu ul.sub-menu li a {
+    width: 100%;
+}
+
+/* Position the second level dropdown correctly */
+.dl-menu .nav li li ul {
+    left: 300px;
+}
+.dl-menu .nav li.et-reverse-direction-nav li ul {
+    left:auto;
+    right:300px;
+}
+
+/* Extend dropdown links full-width */
+.dl-menu .nav li li {
+    padding: 0;
+    min-width: 100%;
+}
+.dl-menu .nav li li a {
+    min-width: 100%;
+}
+
+.et-menu .menu-item .sub-menu{
+	background-color: red !important;
+	color: green !important;
+}
+
+.wine-ratings{
+	display: flex;
+	width: 100% !important;
+	font-size: 0.85rem;
+}
+
+.wine-ratings__title{
+	margin-right: 5px;
+}
+
+.wine-ratings__rating{
+	margin-inline: 5px;
+}
+
+.wine-ratings__rating .badge{
+	padding: 2px 2px;
+	background-color: #bba562;
+	color: #fff;
+	font-weight: 500;
+	border-radius: 5px;
+	display: inline-block;
+	min-width: 30px;
+	text-align: center;
+	margin-right: 3px;
+	font-size: 0.75rem;
+}
+
+.wine-ratings__rating .value{
+	font-weight: 500;
+	text-align: center;
+}
+
+.woocommerce-product-attributes-item--attribute_pa_rp, .woocommerce-product-attributes-item--attribute_pa_ws, .woocommerce-product-attributes-item--attribute_pa_jh, .woocommerce-product-attributes-item--attribute_pa_bc, .woocommerce-product-attributes-item--attribute_pa_bh,.woocommerce-product-attributes-item--attribute_pa_js, .woocommerce-product-attributes-item--attribute_pa_dh{
+	display: none;
+}
+
+.legend{
+	display: flex;
+}
+
+.legend .row{
+	display: flex;
+}
+
+.legend .row .col {
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+}
+
+.legend .row .col .legend__item{
+	margin: 5px ;
+}
+
+.legend .row .col .legend__item .badge{
+	padding: 2px 2px;
+	background-color: #bba562;
+	color: #fff;
+	font-weight: 500;
+	border-radius: 5px;
+	display: inline-block;
+	min-width: 30px;
+	text-align: center;
+	margin-right: 3px;
+	font-size: 0.75rem;
+}
+
+.legend .row .col .legend__item .name {
+	font-size: 0.75rem;
+	color: #bba562;
+}
+
+.quantity-input {
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #ccc;
+	padding: 10px 20px;
+	border-radius: 30px;
+}
+
+.quantity-input .quantity {
+	border: none;
+	outline: none;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.btn {
+	border: none;
+	background: none;
+	font-size: 2rem;
+	color: #bba562;
+	cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+  appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.btn-container {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.atc-btn {
+	width: 100%;
+	padding: 10px;
+	border-radius: 30px;
+	border: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.loaders-container {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.loaders-container .custom-loader {
+	display: flex;
+	flex-direction: column;
+	margin-block: 10px;
+}
+
+.loaders-container .custom-loader .loader-title {
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.loaders-container .custom-loader .loader-legends {
+	display: flex;
+	justify-content: space-between;
+}
+
+.loaders-container .custom-loader .loader-legends .loader-legend {
+	margin: 5px;
+	padding: 0px;
+}
+
+.loaders-container .custom-loader .loader-display {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2px;
+}
+
+.loaders-container .custom-loader .loader-display .loader-bar {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: 100%;
+	background-color: #ccc;
+	border-radius: 20px;
+	padding: 2px;
+}
+
+.loaders-container .custom-loader .loader-display .loader-bar .loader-quantity {
+	display: flex;
+	width: 40%;
+	height: 7px;
+	background-color: #bba562;
+	border-radius: 20px;
+}
+
+.filter-container {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+.filter-btn {
+	border: none;
+	border-radius: 0px;
+	border-bottom: 1px solid #fff;
+	padding: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.selected {
+	background-color: #292929;
+	color: #fff;
+}
+
+ul.et_pb_tabs_controls:after {
+	border: none !important;
+}
+
+.wine-ratings__rating .value a {
+	color: #000 !important;
+}
+
+.woocommerce-product-attributes-item--attribute_pa_offers{
+	display: none !important;
+}
+
+.regions{
+	padding-left: 0px !important;
+}
+
+.regions .region {
+	list-style-type: none;
+}
+
+.regions .region .region-link {
+	text-decoration: none;
+	margin-block: 5px;
+	color: black;
+	line-height: 3rem !important;
+}
+
+.regions .region .region-link:hover {
+	color: #e09900;;
+}
+
+.food-pairs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.food-pairs .food {
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.food-pairs .food .food__image {
+	display: block;
+	width: 150px;
+	height: 150px;
+	background-size: cover;
+	border-radius: 20px;
+}
+
+.food__title {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.food__title span {
+	font-family: "Inter", sans-serif;
+	color: black;
+}
+
+.beef {
+	background-image: url("/wp-content/uploads/2022/11/loija-nguyen-NYBnDWeOX2c-unsplash.jpg");
+}
+
+.seafood {
+	background-image: url("/wp-content/uploads/2022/11/max-mota-N6BTNbaKZMo-unsplash.jpg");
+}
+
+.fish {
+	background-image: url("/wp-content/uploads/2022/11/jennifer-burk-gwBcamFtPr4-unsplash.jpg");
+}
+
+.aged-cheese {
+	background-image: url("/wp-content/uploads/2022/11/jez-timms-gMW2NZ7JGrE-unsplash.jpg");
+}
+
+.lamb {
+	background-image: url("/wp-content/uploads/2022/11/alex-munsell-auIbTAcSH6E-unsplash.jpg");
+}
+
+.steak {
+	background-image: url("/wp-content/uploads/2022/11/farhad-ibrahimzade-6i5FDpD8H5s-unsplash.jpg");
+}
+
+.hidden{
+	display: none !important;
+}
+
+#commentform > p.stars.selected {
+	background-color: #fff !important;
+}
+
+.stars span a {
+	color: #ffaf00 !important;
+	font-size: 20px !important;
+}
+
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu{
+	min-height: 300px !important;
+}
+
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link, #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
+	font-weight: 500 !important;
+	font-size: 16px !important;
+	line-height: 20px !important;
+}
+
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link, #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover {
+	color: #ffaf00 !important;
+}
