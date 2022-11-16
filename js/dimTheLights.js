@@ -47,9 +47,6 @@ const callback = (mutationList, observer) => {
   links.forEach((link) => {
     if (link.getAttribute('aria-expanded') != null) {
       observer.observe(link, config)
-      link.onchange = () => {
-        console.log("Change")
-      }
     }
   });
 })();
