@@ -1,3 +1,5 @@
+var lightsOutElement = document.getElementById('lightsOut') // Get the canvas that dims the light
+
 // Function to dim the lights
 const lightsOut = () => {
   lightsOutElement.style = "display: block;"
@@ -30,8 +32,6 @@ const callback = (mutationList, observer) => {
 (() => {
   // Implementation of dim the lights in Mega Menu for Wordpress
   var primaryMenu = document.querySelector('#mega-menu-primary-menu')
-
-  var lightsOutElement = document.getElementById('lightsOut') // Get the canvas that dims the light
 
   const observer = new MutationObserver(callback)
 
