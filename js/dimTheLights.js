@@ -15,14 +15,17 @@ const lightsOn = () => {
 // Mutation change config
 const config = {
   attributes: true,
+  attributeFilter: ['aria-expanded',],
+  attributeOldValue: true,
 }
 
 const callback = (mutationList, observer) => {
   for (const mutation of mutationList) {
+    console.log(mutation)
     if (mutation.type === 'attributes') {
-      if (mutation.target.getAttribute('aria-expanded') === 'true') {
+      if (mutation.target.getAttribute('aria-expanded') === 'true' && mutation.oldValue != 'true') {
         lightsOut()
-      } else {
+      } else if (mutation.target.getAttribute('aria-expanded') === 'false' && mutation.oldValue != 'false') {
         lightsOn()
       }
     }
@@ -44,6 +47,9 @@ const callback = (mutationList, observer) => {
   links.forEach((link) => {
     if (link.getAttribute('aria-expanded') != null) {
       observer.observe(link, config)
+      link.onchange = () => {
+        console.log("Change")
+      }
     }
   });
 })();
