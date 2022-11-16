@@ -21,7 +21,6 @@ const config = {
 
 const callback = (mutationList, observer) => {
   for (const mutation of mutationList) {
-    console.log(mutation)
     if (mutation.type === 'attributes') {
       if (mutation.target.getAttribute('aria-expanded') === 'true' && mutation.oldValue != 'true') {
         lightsOut()
