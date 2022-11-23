@@ -31,6 +31,6 @@ Take note of the file you want to access and the branch name, and form a url in 
 ```curl
 https://cdn.jsdelivr.net/gh/[username]/[repo_name]/[branch_name]/[file_name]
 ```
-> :information_source: You can also use the `@` symbol to specify a version number or commit hash or use `latest` to get the latest version of the file.
+> :information_source: You can also use the `@` symbol to specify a version number or commit hash or use `latest` to get the latest version of the file. Also you can add `.min` to the end of your file name and __jsdelivr__ will minify the file for you
 
 Try it out yourself, I'm still learning so if you have any suggestions or improvements please let me know.
